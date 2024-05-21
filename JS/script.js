@@ -8,24 +8,52 @@ StartButton.addEventListener('click', function(){
     StartButton.classList.add('none');
     let div=document.createElement('div');
     container.append(div);
+let num= [ Math.floor(Math.random()*5), Math.floor(Math.random()*5), Math.floor(Math.random()*5), Math.floor(Math.random()*5), Math.floor(Math.random()*5)];
 
-
-    for( i=0; i<5; i++ ){
- let num= Math.floor(Math.random()*5);
-    let span= document.createElement('span');
-    div.append(span);
-     span.append(num);
+for(let i=0 ; i < 5; i++){
+  
     
+  let span= document.createElement('span');
+    div.append(span);
+     span.append(num[i]);
+    }
 
-}
+
 
 //> Creazione timer
 
-let timer= setInterval(function (){
+setTimeout(timer, 3000);
 
-div.classList.add('none');
+function timer(NumUtente,h,calc,g,sum){
+    div.classList.add('none');
+ calc=[];
+    
+ 
+ 
+ for(h=0 ; h<5; h++ ){
+       NumUtente= Number.parseInt(prompt('inserisci il numero')) ;
+       calc.push(NumUtente);
+       if( NumUtente===num[h]){
+            alert('Corretto')}
+    else{
+        alert('Sbagliato');
+    } 
+}
+      
+sum=0;
 
-
-
-},3000)
-})
+for(g=0; g<5 ; g++){
+    if(calc[g]===num[g]){
+        sum++;
+    }
+   
+    
+}
+  if(sum===5){
+    alert('hai vinto')
+  }
+  else{
+    alert('hai perso')
+  }
+}})
+    

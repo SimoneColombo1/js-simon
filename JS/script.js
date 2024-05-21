@@ -28,7 +28,7 @@ function display(){
 }
 
 
-setTimeout(timer, 3100);
+setTimeout(timer, 31000);
 
 function timer(NumUtente,h,calc,g,sum){
     

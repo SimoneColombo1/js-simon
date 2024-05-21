@@ -5,4 +5,4 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-creo una funzione che genera 5 numeri casuali con un ciclo for e li stampa in pagina, poi dichiaro un timer che dopo 30 secondi da la classe none hai numeri per farli sparire dalla pagina, e che chiede 5 prompt all'utente infine creo un if else  che dice all'utente se ha indovinato i numeri e quali. 
+ Creo un bottone che fa iniziare la partita, poi creo una funzione che genera 5 numeri casuali con un ciclo for e li stampa in pagina, poi dichiaro un timer che dopo 30 secondi da la classe none hai numeri per farli sparire dalla pagina, e che chiede 5 prompt all'utente infine creo un if else  che dice all'utente se ha indovinato i numeri e quali. 

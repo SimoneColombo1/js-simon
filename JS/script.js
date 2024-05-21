@@ -21,11 +21,17 @@ for(let i=0 ; i < 5; i++){
 
 
 //> Creazione timer
+setTimeout(display,30000);
 
-setTimeout(timer, 3000);
+function display(){
+    div.classList.add('none')
+}
+
+
+setTimeout(timer, 3100);
 
 function timer(NumUtente,h,calc,g,sum){
-    div.classList.add('none');
+    
  calc=[];
     
  
